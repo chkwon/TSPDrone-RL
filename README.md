@@ -63,9 +63,10 @@ Each file includes 100 instances.
 
 Each row represents an instance, in the form of 
 ```
-x_1 y_1 x_2 y_2 ... x_n y_n
+x_1 y_1 d_1 x_2 y_2 d_2 ... x_n y_n d_n
 ```
-where `x_i, y_i` represents the coordinate of customer `i`, and `x_n y_n` represents the depot.
+where `x_i y_i d_i` represents the x-y coordinate of customer `i` and demand. All demands are set to be 1.0 for customers.
+The last components `x_n y_n d_n` represents the depot and `d_n` is set to 0.0 for the depot.
 
 
 
