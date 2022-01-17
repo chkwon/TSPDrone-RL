@@ -63,9 +63,9 @@ Each file includes 100 instances.
 
 Each row represents an instance, in the form of 
 ```
-x_0 y_0 x_1 y_1 x_2 y_2 ... x_{n-1} y_{n-1}
+x_1 y_1 x_2 y_2 ... x_n y_n
 ```
-where `x_i, y_i` represents the coordinate of customer `i`, and `x_{n-1} y_{n-1}` represent the depot.
+where `x_i, y_i` represents the coordinate of customer `i`, and `x_n y_n` represents the depot.
 
 
 
