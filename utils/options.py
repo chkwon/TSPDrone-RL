@@ -15,7 +15,7 @@ def ParseParams():
     parser.add_argument('--max_w', default = 2.5, type=float, help="Max weight a drone can carry")
     parser.add_argument('--batch_size', default= 128,type=int, help='Batch size for training')
     parser.add_argument('--n_train', default=1000000,type=int, help='# of episodes for training')
-    parser.add_argument('--test_size', default= 128,type=int, help='# of instances for testing')
+    parser.add_argument('--test_size', default= 100,type=int, help='# of instances for testing')
     parser.add_argument('--data_dir', type=str, default='data')
     parser.add_argument('--save_path', type=str, default='trained_models/')
     parser.add_argument('--test_interval', default=200,type=int, help='test every test_interval steps')
