@@ -55,10 +55,6 @@ The results of both greedy and batch sampling decoding will be stored in the `re
 
 
 
-### Example TSPD solution
-A sample solution of TSPD for 11 nodes is depicted below:
-![example-single-1](https://user-images.githubusercontent.com/25514362/93505944-8c1cfd80-f8e9-11ea-81af-ae5d10f5eeaf.png)
-
 
 ## Test Instances
 
@@ -72,6 +68,10 @@ x_0 y_0 x_1 y_1 x_2 y_2 ... x_{n-1} y_{n-1}
 where `x_i, y_i` represents the coordinate of customer `i`, and `x_{n-1} y_{n-1}` represent the depot.
 
 
+
+## Example TSPD solution
+A sample solution of TSPD for 11 nodes is depicted below:
+![example-single-1](https://user-images.githubusercontent.com/25514362/93505944-8c1cfd80-f8e9-11ea-81af-ae5d10f5eeaf.png)
 
 
 
