@@ -1,5 +1,8 @@
 .DS_Store
 
+results/*.txt
+trained_models/*.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
