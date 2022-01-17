@@ -5,15 +5,15 @@ def str2bool(v):
 
 
 def ParseParams():
-    parser = argparse.ArgumentParser(description="FFEVSS Rebalancing")
+    parser = argparse.ArgumentParser(description="TSP with Drone")
 
     # Data generation for Training and Testing 
-    parser.add_argument('--n_nodes', default=11, help="Number of nodes")
+    parser.add_argument('--n_nodes', default=11, type=int, help="Number of nodes")
     parser.add_argument('--R', default = 150, type=int, help="Drone battery life in time units")
     parser.add_argument('--v_t', default = 1, type=int, help="Speed of truck in m/s")
     parser.add_argument('--v_d', default = 2, type=int, help="Speed of drone in m/s")
     parser.add_argument('--max_w', default = 2.5, type=float, help="Max weight a drone can carry")
-    parser.add_argument('--batch_size', default= 128,type=int, help='Batch size for training')
+    parser.add_argument('--batch_size', default= 100,type=int, help='Batch size for training')
     parser.add_argument('--n_train', default=1000000,type=int, help='# of episodes for training')
     parser.add_argument('--test_size', default= 100,type=int, help='# of instances for testing')
     parser.add_argument('--data_dir', type=str, default='data')
@@ -26,7 +26,7 @@ def ParseParams():
     
     # Embedding 
     parser.add_argument('--embedding_dim', default=3,type=int, help='Dimension of input embedding')
-    parser.add_argument('--hidden_dim', default=128,type=int, help='Dimension of hidden layers in Enc/Dec')
+    parser.add_argument('--hidden_dim', default=256,type=int, help='Dimension of hidden layers in Enc/Dec')
     
     # Decoder: LSTM 
     parser.add_argument('--rnn_layers', default=1, type=int, help='Number of LSTM layers in the encoder and decoder')

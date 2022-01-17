@@ -19,6 +19,7 @@ if __name__ == '__main__':
     max_epochs = args['n_train']
     device = torch.device("cuda") if torch.cuda.is_available else torch.device("cpu")
     save_path = args['save_path']
+    n_nodes = args['n_nodes']
     dataGen = DataGenerator(args)
     data = dataGen.get_train_next()
     data = dataGen.get_test_all()
@@ -28,10 +29,10 @@ if __name__ == '__main__':
     if not os.path.exists(save_path):
         os.makedirs(save_path)
     else:
-        path = save_path +'/best_model_actor_truck_params.pkl'
+        path = save_path + 'n' + str(n_nodes) + '/best_model_actor_truck_params.pkl'
         if os.path.exists(path):
             actor.load_state_dict(torch.load(path, map_location='cpu'))
-            path = save_path +'/best_model_critic_params.pkl'
+            path = save_path + 'n' + str(n_nodes) + '/best_model_critic_params.pkl'
             critic.load_state_dict(torch.load(path, map_location='cpu'))
             print("Succesfully loaded keys")
     

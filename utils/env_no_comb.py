@@ -19,8 +19,8 @@ def create_test_dataset(
     # create/load data
     if os.path.exists(fname):
         print('Loading dataset for {}...'.format(task_name))
-        data = np.loadtxt(fname,delimiter=' ')
-        data = data.reshape(-1, n_nodes,3)
+        data = np.loadtxt(fname, delimiter=' ')
+        data = data.reshape(-1, n_nodes, 3)
         input_data = data
     else:
         print('Creating dataset for {}...'.format(task_name))
