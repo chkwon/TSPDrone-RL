@@ -71,7 +71,7 @@ where `x_i, y_i` represents the coordinate of customer `i`, and `x_n y_n` repres
 
 ## Example TSPD solution
 A sample solution of TSPD for 11 nodes is depicted below:
-![optimal-n11-6-2.pdf](optimal-n11-6-2.pdf)
+![optimal-n11-6-2.pdf](images/optimal-n11-6-2.pdf)
 
 
 
