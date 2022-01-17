@@ -38,7 +38,7 @@ python main.py --train=True
 ```
 The trained weight files will be saved in the `/trained_models` directory.
 
-Pre-trained weights files for random data as described in the paper are located in the `/trained_models/pretrained_random_data` directory. To use these weight files, copy the two `.pkl` files to the `/trained_models` directory.
+Pre-trained weights files for random data as described in the paper are located in the `/trained_models` directory for some sizes, `n = 11, 15, 20, 50, 100`.
 
 
 ### Evaluation
