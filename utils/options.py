@@ -51,6 +51,7 @@ def ParseParams():
 
     args, unknown = parser.parse_known_args()
     args = vars(args)
+    args['decode_len'] = max(round( args['n_nodes'] * 1.8 ), args['decode_len'])
     
     for key, value in sorted(args.items()):
         print("{}: {}".format(key,value))
