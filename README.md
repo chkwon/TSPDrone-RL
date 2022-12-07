@@ -3,13 +3,12 @@
 This repository contains code for deep reinforcement learning to solve the Traveling Salesman Problem with Drone (TSPD). For details, please see our paper [A Deep Reinforcement Learning Approach for Solving the Traveling Salesman Problem with Drone](https://arxiv.org/abs/2112.12545). If this code is useful for your work, please cite our paper:
 
 ```
-@misc{bogyrbayeva2021deep,
+@article{bogyrbayeva2022deep,
       title={A Deep Reinforcement Learning Approach for Solving the Traveling Salesman Problem with Drone}, 
       author={Aigerim Bogyrbayeva and Taehyun Yoon and Hanbum Ko and Sungbin Lim and Hyokun Yun and Changhyun Kwon},
-      year={2021},
-      eprint={2112.12545},
-      archivePrefix={arXiv},
-      primaryClass={math.OC}
+      year={2022},
+      journal={Transportation Research Part C: Emerging Technologies},
+      volume={To Appear}
 }
 ``` 
 
